@@ -1,0 +1,11 @@
+version: "3.2"
+services:
+    registry:
+        image: registry:2
+        networks:
+            - funcs
+#        volumes:
+#            - /var/run/docker.sock:/var/run/docker.sock
+networks:
+    funcs:
+        attachable: true
